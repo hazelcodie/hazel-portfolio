@@ -1,22 +1,17 @@
+import Navbar from "@/components/navbar";
 import Intro from "@/components/intro";
 import AboutMe from "@/components/about-me";
-import {TerminalDemo} from "@/components/skills";
+import { TerminalDemo } from "@/components/skills";
+import "./globals.css";
+
 
 export default function Home() {
   return (
-    <div className="snap-y snap-mandatory h-screen overflow-y-scroll bg-fuchsia-100">
-      <section className=" flex items-center justify-center min-h-screen">
+    <div className="snap-y snap-mandatory min-h-screen overflow-y-scroll  overflow-x-hidden bg-fuchsia-100">
+        <Navbar />
         <Intro />
-      </section>
-      
-      <section className="flex items-center justify-center min-h-screen">
         <AboutMe />
-      </section>
-
-      <section className="flex items-center justify-center min-h-screen">
-       <TerminalDemo />
-      </section>
-
+        <TerminalDemo />
     </div>
   );
 }
