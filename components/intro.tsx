@@ -5,43 +5,45 @@ import profile from "@/public/images/profile.png";
 
 const Intro = () => {
   return (
-   
-      <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-12 md:gap-20 max-w-6xl mx-auto">
-       
-        <div className="md:w-1/2 w-full">
-          <h1 className="text-[50px] font-bold mb-[33px] text-gray-800  leading-snug text-center">
-            I’m Hazel<br/> <span className="italic text-2xl">and I specialized in</span>
-          </h1>
+    <div className="w-full pt-[4vh] md:pt-[12vh] bg-fuchsia-100 overflow-hidden">
+      <div className="flex justify-center flex-col w-4/5 h-full mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 h-full">
+          
+          <div className="flex flex-col justify-center gap-4">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl text-black font-bold">
+              I'm Hazel and I specialized in
+            </h1>
 
-          <div className="flex flex-col gap-3">
-            <span className="bg-[#c7e6f7] text-black px-4 py-2 rounded-lg text-lg w-fit p">
-              UI and UX Design
-            </span>
-            <span className="bg-[#f8d4e4] text-black px-4 py-2 rounded-lg text-lg w-fit">
-              Front-end Development
-            </span>
-            <span className="bg-[#2d49c2] text-white px-4 py-2 rounded-lg text-lg w-fit">
-              Web Development
-            </span>
+            <div className="flex flex-col gap-3">
+              <span className="bg-[#c7e6f7] text-black px-4 py-2 rounded-lg text-lg w-fit">
+                UI and UX Design
+              </span>
+              <span className="bg-[#f8d4e4] text-black px-4 py-2 rounded-lg text-lg w-fit">
+                Front-end Development
+              </span>
+              <span className="bg-[#2d49c2] text-white px-4 py-2 rounded-lg text-lg w-fit">
+                Web Development
+              </span>
+            </div>
+
+            <button className="mt-4 px-4 py-2 border border-black text-black hover:bg-black hover:text-white transition w-fit">
+              Projects
+            </button>
           </div>
 
-          <button className="mt-6 px-4 py-2 border border-black text-black hover:bg-black hover:text-white transition w-fit">
-            Projects
-          </button>
+          {/* Right Side - Profile Image */}
+          <div className="flex items-center justify-center lg:justify-end h-full">
+            <Image
+              src={profile}
+              alt="Hazel Profile"
+              width={300}
+              height={300}
+              className=" object-cover"
+            />
+          </div>
         </div>
-      
-        <div className="md:w-1/2 w-full flex justify-center md:justify-end">
-          <Image
-            src={profile}
-            alt="Hazel Profile"
-            width={300}
-            height={300}
-            className="object-contain max-w-full h-auto"
-            priority
-          />
-        </div>
-      </section>
-   
+      </div>
+    </div>
   );
 };
 

@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar";
 import Intro from "@/components/intro";
 import AboutMe from "@/components/about-me";
 import { TerminalDemo } from "@/components/skills";
+import {DesignProject} from "@/components/designProject";
 import "./globals.css";
 
 
@@ -12,6 +13,7 @@ export default function Home() {
         <Intro />
         <AboutMe />
         <TerminalDemo />
+        <DesignProject/>
     </div>
   );
 }
