@@ -31,7 +31,7 @@ const Intro = () => {
             </button>
           </div>
 
-          {/* Right Side - Profile Image */}
+         
           <div className="flex items-center justify-center lg:justify-end h-full">
             <Image
               src={profile}
