@@ -3,7 +3,9 @@ import Intro from "@/components/intro";
 import AboutMe from "@/components/about-me";
 import { TerminalDemo } from "@/components/skills";
 import {DesignProject} from "@/components/designProject";
+import Menu from "@/components/menu";
 import "./globals.css";
+
 
 export default function Home() {
   return (
@@ -14,7 +16,7 @@ export default function Home() {
         <AboutMe />
         <TerminalDemo />
         <DesignProject/>
-          
+        <Menu />
     </div>
   );
 }
