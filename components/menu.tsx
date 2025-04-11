@@ -30,12 +30,12 @@ const Icons = {
       />
     </svg>
   ),
-  x: (props: IconProps) => (
+  facebook: (props: IconProps) => (
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <title>X</title>
+      <title>Facebook</title>
       <path
         fill="currentColor"
-        d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+        d="M22.675 0h-21.35C.597 0 0 .592 0 1.326v21.348C0 23.408.597 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.797.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.31h3.587l-.467 3.622h-3.12V24h6.116C23.403 24 24 23.408 24 22.674V1.326C24 .592 23.403 0 22.675 0z"
       />
     </svg>
   ),
@@ -65,28 +65,28 @@ const Icons = {
 const DATA = {
   navbar: [
     { href: "#", icon: HomeIcon, label: "Home" },
-    { href: "#", icon: PencilIcon, label: "Blog" },
+    
   ],
   contact: {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "#",
+        url: "https://github.com/hazelcodie",
         icon: Icons.github,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "#",
+        url: "https://www.linkedin.com/in/hazel-delda-380a4b30b/",
         icon: Icons.linkedin,
       },
-      X: {
-        name: "X",
-        url: "#",
-        icon: Icons.x,
+      Facebook: {
+        name: "Facebook",
+        url: "https://www.facebook.com/hazel.delda.7/",
+        icon: Icons.facebook,
       },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "hazeldelda11@gmail.com",
         icon: Icons.email,
       },
     },
@@ -94,72 +94,72 @@ const DATA = {
 };
 
 export function Menu() {
-    return (
-      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
-        <TooltipProvider>
-          <Dock direction="middle">
-            {DATA.navbar.map((item) => (
-              <DockIcon key={item.label}>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Link
-                      href={item.href}
-                      aria-label={item.label}
-                      className={cn(
-                        buttonVariants({ variant: "ghost", size: "icon" }),
-                        "size-12 rounded-full",
-                      )}
-                    >
-                      <item.icon className="size-4" />
-                    </Link>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>{item.label}</p>
-                  </TooltipContent>
-                </Tooltip>
-              </DockIcon>
-            ))}
-  
-            <Separator orientation="vertical" className="h-full" />
-  
-            {Object.entries(DATA.contact.social).map(([name, social]) => (
-              <DockIcon key={name}>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Link
-                      href={social.url}
-                      aria-label={social.name}
-                      className={cn(
-                        buttonVariants({ variant: "ghost", size: "icon" }),
-                        "size-12 rounded-full",
-                      )}
-                    >
-                      <social.icon className="size-4" />
-                    </Link>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>{name}</p>
-                  </TooltipContent>
-                </Tooltip>
-              </DockIcon>
-            ))}
-  
-            <Separator orientation="vertical" className="h-full py-2" />
-  
-            <DockIcon>
+  return (
+    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
+      <TooltipProvider>
+        <Dock direction="middle">
+          {DATA.navbar.map((item) => (
+            <DockIcon key={item.label}>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  {/* <ModeToggle className="rounded-full" /> */}
+                  <Link
+                    href={item.href}
+                    aria-label={item.label}
+                    className={cn(
+                      buttonVariants({ variant: "ghost", size: "icon" }),
+                      "size-12 rounded-full",
+                    )}
+                  >
+                    <item.icon className="size-4" />
+                  </Link>
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>Theme</p>
+                  <p>{item.label}</p>
                 </TooltipContent>
               </Tooltip>
             </DockIcon>
-          </Dock>
-        </TooltipProvider>
-      </div>
-    );
-  }
-  
+          ))}
+
+          <Separator orientation="vertical" className="h-full" />
+
+          {Object.entries(DATA.contact.social).map(([name, social]) => (
+            <DockIcon key={name}>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Link
+                    href={social.url}
+                    aria-label={social.name}
+                    className={cn(
+                      buttonVariants({ variant: "ghost", size: "icon" }),
+                      "size-12 rounded-full",
+                    )}
+                  >
+                    <social.icon className="size-4" />
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{name}</p>
+                </TooltipContent>
+              </Tooltip>
+            </DockIcon>
+          ))}
+
+          <Separator orientation="vertical" className="h-full py-2" />
+
+          <DockIcon>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                {/* <ModeToggle className="rounded-full" /> */}
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Theme</p>
+              </TooltipContent>
+            </Tooltip>
+          </DockIcon>
+        </Dock>
+      </TooltipProvider>
+    </div>
+  );
+}
+
 export default Menu;
