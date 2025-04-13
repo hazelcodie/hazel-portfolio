@@ -26,7 +26,7 @@ const Intro = () => {
             </div>
 
             <button className="mt-4 px-4 py-2 border border-black text-black hover:bg-black hover:text-white transition w-fit">
-              Projects
+             <a href="#design-project"> Projects </a>
             </button>
           </div>
 

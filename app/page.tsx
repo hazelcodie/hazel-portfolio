@@ -4,6 +4,7 @@ import AboutMe from "@/components/about-me";
 import { TerminalDemo } from "@/components/skills";
 import {DesignProject} from "@/components/designProject";
 import Menu from "@/components/menu";
+import Projects from "@/components/webProjects";
 import "./globals.css";
 
 
@@ -17,6 +18,7 @@ export default function Home() {
         <TerminalDemo />
         <DesignProject/>
         <Menu />
+        <Projects />
     </div>
   );
 }

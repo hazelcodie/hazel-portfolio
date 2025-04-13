@@ -4,7 +4,6 @@ import { CalendarIcon, HomeIcon, MailIcon, PencilIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
-
 import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import {
@@ -65,7 +64,7 @@ const Icons = {
 const DATA = {
   navbar: [
     { href: "#", icon: HomeIcon, label: "Home" },
-    
+    { href: "/Delda_Resume.pdf", icon: PencilIcon, label: "Resume" },
   ],
   contact: {
     social: {
@@ -105,9 +104,11 @@ export function Menu() {
                   <Link
                     href={item.href}
                     aria-label={item.label}
+                    target={item.href.endsWith(".pdf") ? "_blank" : undefined} // Open PDF in a new tab
+                    rel={item.href.endsWith(".pdf") ? "noopener noreferrer" : undefined} // Security for external links
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full",
+                      "size-12 rounded-full"
                     )}
                   >
                     <item.icon className="size-4" />
@@ -131,7 +132,7 @@ export function Menu() {
                     aria-label={social.name}
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full",
+                      "size-12 rounded-full"
                     )}
                   >
                     <social.icon className="size-4" />
