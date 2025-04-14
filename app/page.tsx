@@ -5,6 +5,7 @@ import { TerminalDemo } from "@/components/skills";
 import {DesignProject} from "@/components/designProject";
 import Menu from "@/components/menu";
 import Projects from "@/components/webProjects";
+import Achievements from "@/components/achievements";
 import "./globals.css";
 
 
@@ -19,6 +20,7 @@ export default function Home() {
         <DesignProject/>
         <Menu />
         <Projects />
+        <Achievements />
     </div>
   );
 }

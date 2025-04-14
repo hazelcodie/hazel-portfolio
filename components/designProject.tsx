@@ -29,7 +29,7 @@ const features = [
     className: "col-span-3 lg:col-span-2",
     background: (
       <video
-        src="/videos/notifications-preview.mp4"
+        src="/videos/skinsense-preview.mp4"
         autoPlay
         loop
         muted
@@ -46,7 +46,7 @@ const features = [
     className: "col-span-3 lg:col-span-2",
     background: (
       <video
-        src="/videos/integrations-preview.mp4"
+        src="/videos/event-preview.mp4"
         autoPlay
         loop
         muted
@@ -63,7 +63,7 @@ const features = [
     className: "col-span-3 lg:col-span-1",
     background: (
       <video
-        src="/videos/calendar-preview.mp4"
+        src="/videos/haze-preview.mp4"
         autoPlay
         loop
         muted

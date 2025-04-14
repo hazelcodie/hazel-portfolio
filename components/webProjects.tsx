@@ -16,7 +16,7 @@ const projectsData: Project[] = [
       "A web application for managing events, including registration and ticketing.",
     link: "https://example.com/project1",
     code: "https://github.com/hazelcodie/eventsmanagementsystem",
-    video: "https://www.youtube.com/watch?v=example",
+    video: "/videos/eventMSPreview.mp4",
     technologies: ["Laravel", "PHP", "Blade", "MySQL", "Figma"],
   },
   {
@@ -24,7 +24,7 @@ const projectsData: Project[] = [
     description: "A simple to-do list application to manage tasks.",
     link: "https://example.com/project1",
     code: "https://github.com/hazelcodie/toDolist",
-    video: "https://www.youtube.com/watch?v=example",
+    video: "/videos/TODO-List.mp4",
     technologies: ["Laravel", "PHP", "Blade", "MySQL"],
   },
   {
@@ -32,7 +32,7 @@ const projectsData: Project[] = [
     description: "A simple to-do list application to manage tasks.",
     link: "https://example.com/project1",
     code: "https://github.com/hazelcodie/toDolist",
-    video: "https://www.youtube.com/watch?v=example",
+    video: "/videos/skinsenseVid-preview.mp4",
     technologies: ["WordPress"],
   },
   {
