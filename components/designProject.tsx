@@ -75,7 +75,7 @@ const features = [
 
 export const DesignProject = () => {
   return (
-    <section id="design-project" className="py-12 px-18 bg-gray-100">
+    <section id="design-project" className="py-12 px-18 bg-white">
       <h2 className="text-2xl font-bold text-center mb-8">Design Projects</h2>
       <BentoGrid>
         {features.map((feature, idx) => (

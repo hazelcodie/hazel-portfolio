@@ -6,6 +6,7 @@ import {DesignProject} from "@/components/designProject";
 import Menu from "@/components/menu";
 import Projects from "@/components/webProjects";
 import Achievements from "@/components/achievements";
+import Footer from "@/components/footer";
 import "./globals.css";
 
 
@@ -21,6 +22,7 @@ export default function Home() {
         <Menu />
         <Projects />
         <Achievements />
+        <Footer />
     </div>
   );
 }
