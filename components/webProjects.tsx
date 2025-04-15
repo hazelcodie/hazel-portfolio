@@ -46,35 +46,53 @@ const projectsData: Project[] = [
 ];
 const Projects = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-18">
-      <h1 className="text-5xl font-bold text-center text-black dark:text-white py-5">
+    <div className="flex flex-col items-center justify-center min-h-screen px-4 md:px-18">
+      <h1 className="text-4xl md:text-5xl font-bold text-center text-black dark:text-white py-5">
         Web Projects
       </h1>
-      <div className="grid grid-cols-2 gap-4">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-6xl">
         {projectsData?.map((item, index) => (
-          <div className="flex flex-col border border-black-100 rounded-md">
+          <div key={index} className="flex flex-col border border-gray-200 rounded-md w-full">
             <video
               src={item.video}
               autoPlay
               muted
-              className="w-full h-full rounded-t-md"
+              loop
+              className="w-full h-auto rounded-t-md object-cover"
             />
-            <div className=" flex flex-col gap-3 p-4">
+            <div className="flex flex-col gap-3 p-4">
               <h2 className="text-lg font-bold">{item.title}</h2>
               <p className="text-sm text-gray-500">{item.description}</p>
+
               <div className="flex gap-1 flex-wrap">
                 {item.technologies.map((tech, index) => (
                   <div
                     key={index}
-                    className="flex border border-gray-200 rounded-md px-2 py-1 text-sm bg-gray-500 text-white"
+                    className="border border-gray-200 rounded-md px-2 py-1 text-sm bg-gray-500 text-white"
                   >
                     {tech}
                   </div>
                 ))}
               </div>
-              <div className="flex gap-2 mt-2">
-                <Button variant="default">View</Button>
-                <Button variant="outline">Code</Button>
+
+              <div className="flex gap-2 mt-2 flex-wrap">
+                <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto"
+                 >
+                <Button variant="default" className="w-full">View</Button>
+                </a>
+                <a
+                href={item.code}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto"
+                >
+                <Button variant="outline" className="w-full">Code</Button>
+                </a>
               </div>
             </div>
           </div>
@@ -83,5 +101,6 @@ const Projects = () => {
     </div>
   );
 };
+
 
 export default Projects;

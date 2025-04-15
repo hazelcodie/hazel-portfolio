@@ -5,10 +5,14 @@ import profile from "@/public/images/profile.png";
 
 const Intro = () => {
   return (
-    <div className="w-full pt-[4vh] md:pt-[12vh] bg-fuchsia-100 overflow-hidden">
-      <div className="flex justify-center flex-col w-4/5 h-full mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 h-full">
-          <div className="flex flex-col justify-center gap-4">
+    <section
+      id="intro"
+      className="flex flex-col items-center justify-start w-full min-h-screen px-10 pt-20 bg-fuchsia-100"
+    >
+      <div className="w-full max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
+          {/* Text Section */}
+          <div className="flex flex-col justify-center gap-4 ">
             <h1 className="text-2xl md:text-3xl lg:text-4xl text-black font-bold">
               I'm Hazel and I specialized in
             </h1>
@@ -26,22 +30,23 @@ const Intro = () => {
             </div>
 
             <button className="mt-4 px-4 py-2 border border-black text-black hover:bg-black hover:text-white transition w-fit">
-             <a href="#design-project"> Projects </a>
+              <a href="#design-project"> Projects </a>
             </button>
           </div>
 
-          <div className="flex items-center justify-center lg:justify-end h-full">
+          {/* Image Section */}
+          <div className="flex items-center justify-center lg:justify-end">
             <Image
               src={profile}
               alt="Hazel Profile"
               width={300}
               height={300}
-              className=" object-cover"
+              className="object-cover"
             />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

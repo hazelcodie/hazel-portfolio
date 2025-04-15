@@ -28,12 +28,9 @@ const features = [
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
     background: (
-      <video
-        src="/videos/skinsense-preview.mp4"
-        autoPlay
-        loop
-        muted
-        className="absolute inset-0 w-full h-full object-cover"
+      <img  
+      src="/images/skinsense.png"
+      className="absolute inset-0 w-full h-full object-cover"
       />
     ),
   },
@@ -45,11 +42,8 @@ const features = [
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
     background: (
-      <video
-        src="/videos/event-preview.mp4"
-        autoPlay
-        loop
-        muted
+      <img
+        src="/images/event.png"
         className="absolute inset-0 w-full h-full object-cover"
       />
     ),
