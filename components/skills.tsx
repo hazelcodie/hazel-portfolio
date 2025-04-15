@@ -38,7 +38,13 @@ export function TerminalDemo() {
       ref={sectionRef} // Attach the ref to the section
       className="flex flex-col items-center justify-center w-full min-h-screen px-6 py-12"
     >
-      <h1 className="text-4xl font-bold mb-6">Skills</h1>
+      <div className="flex justify-center mb-8">
+          <img
+            src="/images/skills-logo.png"
+            alt="skills"
+            className="w-65"
+          />
+        </div>
       <Terminal>
         {isVisible && ( // Render animations only when the section is visible
           <>

@@ -47,9 +47,13 @@ const projectsData: Project[] = [
 const Projects = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 md:px-18">
-      <h1 className="text-4xl md:text-5xl font-bold text-center text-black dark:text-white py-5">
-        Web Projects
-      </h1>
+      <div className="flex justify-center mb-8 mt-7">
+          <img
+            src="/images/webprojects-logo.png"
+            alt="skills"
+            className="w-50"
+          />
+        </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-6xl">
         {projectsData?.map((item, index) => (

@@ -69,8 +69,14 @@ const features = [
 
 export const DesignProject = () => {
   return (
-    <section id="design-project" className="py-12 px-18 bg-white">
-      <h2 className="text-2xl font-bold text-center mb-8">Design Projects</h2>
+    <section id="design-project" className="py-12 px-18 bg-[#faf4f4]">
+      <div className="flex justify-center mb-8">
+          <img
+            src="/images/designproject-logo.png"
+            alt="designProjects"
+            className="w-65"
+          />
+        </div>
       <BentoGrid>
         {features.map((feature, idx) => (
           <BentoCard key={idx} {...feature} />
