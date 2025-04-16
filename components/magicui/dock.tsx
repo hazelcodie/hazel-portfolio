@@ -13,6 +13,17 @@ import React, { PropsWithChildren, useRef } from "react";
 
 import { cn } from "@/lib/utils";
 
+// Constants
+const DEFAULT_SIZE = 40;
+const DEFAULT_MAGNIFICATION = 60;
+const DEFAULT_DISTANCE = 140;
+
+// Variants
+const dockVariants = cva(
+  "supports-backdrop-blur:bg-white/10 supports-backdrop-blur:dark:bg-black/10 mx-auto mt-8 flex h-[58px] w-max items-center justify-center gap-2 rounded-2xl border p-2 backdrop-blur-md",
+);
+
+// Dock Props
 export interface DockProps extends VariantProps<typeof dockVariants> {
   className?: string;
   iconSize?: number;
@@ -22,14 +33,7 @@ export interface DockProps extends VariantProps<typeof dockVariants> {
   children: React.ReactNode;
 }
 
-const DEFAULT_SIZE = 40;
-const DEFAULT_MAGNIFICATION = 60;
-const DEFAULT_DISTANCE = 140;
-
-const dockVariants = cva(
-  "supports-backdrop-blur:bg-white/10 supports-backdrop-blur:dark:bg-black/10 mx-auto mt-8 flex h-[58px] w-max items-center justify-center gap-2 rounded-2xl border p-2 backdrop-blur-md",
-);
-
+// Dock Component
 const Dock = React.forwardRef<HTMLDivElement, DockProps>(
   (
     {
@@ -47,15 +51,20 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
 
     const renderChildren = () => {
       return React.Children.map(children, (child) => {
-        if (React.isValidElement(child) && child.type === DockIcon) {
-          const props = child.props && typeof child.props === "object" ? child.props : {};
-          return React.cloneElement(child, {
-            ...props,
-            mouseX: mouseX,
-            size: iconSize,
-            magnification: iconMagnification,
-            distance: iconDistance,
-          });
+        if (
+          React.isValidElement(child) &&
+          (child.type as any).displayName === "DockIcon"
+        ) {
+          return React.cloneElement(
+            child as React.ReactElement<DockIconProps>,
+            {
+              ...props,
+              mouseX,
+              size: iconSize,
+              magnification: iconMagnification,
+              distance: iconDistance,
+            },
+          );
         }
         return child;
       });
@@ -81,6 +90,7 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
 
 Dock.displayName = "Dock";
 
+// DockIcon Props
 export interface DockIconProps
   extends Omit<MotionProps & React.HTMLAttributes<HTMLDivElement>, "children"> {
   size?: number;
@@ -92,6 +102,7 @@ export interface DockIconProps
   props?: PropsWithChildren;
 }
 
+// DockIcon Component
 const DockIcon = ({
   size = DEFAULT_SIZE,
   magnification = DEFAULT_MAGNIFICATION,
