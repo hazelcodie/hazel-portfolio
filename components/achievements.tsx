@@ -186,7 +186,7 @@ export const Achievements = () => {
                     href="https://www.facebook.com/share/p/163kYacgJE/"
                     className="text-blue-600 underline"
                   >
-                    link here
+                    Read more
                   </a>
                   
                 </p>
