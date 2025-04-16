@@ -1,6 +1,7 @@
 "use client";
 
-import { CalendarIcon, HomeIcon, MailIcon, PencilIcon } from "lucide-react";
+import { CalendarIcon, HomeIcon, MailIcon, BookLock } from "lucide-react";
+import { Sun } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -64,7 +65,6 @@ const Icons = {
 const DATA = {
   navbar: [
     { href: "#", icon: HomeIcon, label: "Home" },
-    { href: "/Delda_Resume.pdf", icon: PencilIcon, label: "Resume" },
   ],
   contact: {
     social: {
@@ -97,6 +97,7 @@ export function Menu() {
     <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
       <TooltipProvider>
         <Dock direction="middle">
+          {/* Render Navbar Icons */}
           {DATA.navbar.map((item) => (
             <DockIcon key={item.label}>
               <Tooltip>
@@ -104,8 +105,6 @@ export function Menu() {
                   <Link
                     href={item.href}
                     aria-label={item.label}
-                    target={item.href.endsWith(".pdf") ? "_blank" : undefined} // Open PDF in a new tab
-                    rel={item.href.endsWith(".pdf") ? "noopener noreferrer" : undefined} // Security for external links
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
                       "size-12 rounded-full"
@@ -123,6 +122,7 @@ export function Menu() {
 
           <Separator orientation="vertical" className="h-full" />
 
+          {/* Render Social Icons */}
           {Object.entries(DATA.contact.social).map(([name, social]) => (
             <DockIcon key={name}>
               <Tooltip>
@@ -147,16 +147,42 @@ export function Menu() {
 
           <Separator orientation="vertical" className="h-full py-2" />
 
+          {/* Add Resume Icon */}
           <DockIcon>
             <Tooltip>
               <TooltipTrigger asChild>
-                {/* <ModeToggle className="rounded-full" /> */}
+                <Link
+                  href="/deldaResume.pdf"
+                  aria-label="Resume"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn(
+                    buttonVariants({ variant: "ghost", size: "icon" }),
+                    "size-12 rounded-full"
+                  )}
+                >
+                  <BookLock className="size-4" />
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Resume</p>
+              </TooltipContent>
+            </Tooltip>
+          </DockIcon>
+
+          {/* <DockIcon>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <div className="size-12 rounded-full flex items-center justify-center">
+                  <Sun className="w-4 h-5" />
+                </div>
               </TooltipTrigger>
               <TooltipContent>
                 <p>Theme</p>
               </TooltipContent>
             </Tooltip>
-          </DockIcon>
+          </DockIcon> */}
+          
         </Dock>
       </TooltipProvider>
     </div>

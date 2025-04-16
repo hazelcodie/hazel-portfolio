@@ -1,12 +1,14 @@
-import { CalendarIcon, FileTextIcon } from "@radix-ui/react-icons";
-import { BellIcon, Share2Icon } from "lucide-react";
+import { CalendarIcon } from "@radix-ui/react-icons";
+import { PiScanSmileyThin } from "react-icons/pi";
+import { BsCartDash } from "react-icons/bs";
+import { BsChatSquareText } from "react-icons/bs";
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 
 const features = [
   {
-    Icon: FileTextIcon,
+    Icon: BsCartDash,
     name: "BuyCycle Mobile App",
-    description: "We automatically save your files as you type.",
+    description: "An app that connects users to buy and sell brand-new and second-hand bicycles effortlessly",
     href: "https://www.figma.com/design/xJm9qS87AVyj8c3sRQRfFM/BuyCycle?node-id=266-401&t=p0ny5g8AVMmUAE9F-1",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
@@ -21,9 +23,9 @@ const features = [
     ),
   },
   {
-    Icon: BellIcon,
+    Icon: PiScanSmileyThin,
     name: "Skin Sense",
-    description: "Get notified when something happens.",
+    description: "A mobile app that scans your skin type and gives personalized skincare recommendations.",
     href: "https://www.figma.com/design/uxLf61q0h8UJmSpyT9P8At/SkinSense--Thesis-UI-DESIGN?node-id=250-453&t=DSnIGbGyejuF8I6Q-1",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
@@ -35,9 +37,9 @@ const features = [
     ),
   },
   {
-    Icon: Share2Icon,
+    Icon: CalendarIcon,
     name: "Event Management System",
-    description: "Supports 100+ integrations and counting.",
+    description: "A website that helps schools manage, organize, and track events efficiently.",
     href: "https://www.figma.com/design/CamCwrRT8jxqFlMv4SrVsD/event-wireframe?node-id=398-2&t=jE06eqhmE45lb9il-1",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
@@ -49,9 +51,9 @@ const features = [
     ),
   },
   {
-    Icon: CalendarIcon,
+    Icon: BsChatSquareText,
     name: "HAZE AI Assistant",
-    description: "Use the calendar to filter your files by date.",
+    description: "An AI assistant that generates accurate and reliable reports.",
     href: "https://www.figma.com/design/9xvlcX25pyMmtDAwQMYi5V/HAZE-AI-assistant?node-id=44-305&t=hmNlD7HZhVVFE53F-1",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",

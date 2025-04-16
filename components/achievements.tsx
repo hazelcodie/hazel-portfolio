@@ -6,7 +6,7 @@ export const Achievements = () => {
           <img
             src="/images/achievements-logo.png"
             alt="skills"
-            className="w-65"
+            className="w-40 sm:w-48 md:w-65"
           />
         </div>
 
@@ -18,14 +18,12 @@ export const Achievements = () => {
               src="/images/profile.png"
               alt="Hazel image"
             />
-            <div className="flex flex-col w-full max-w-[320px] leading-1.5 p-4 border-gray-200 bg-white rounded-e-xl rounded-es-xl dark:bg-gray-700 items-start">
+            <div className="flex flex-col w-full max-w-full sm:max-w-[320px] leading-1.5 p-4 border-gray-200 bg-white rounded-e-xl rounded-es-xl dark:bg-gray-700 items-start">
               <div className="flex items-center space-x-2 rtl:space-x-reverse">
                 <span className="text-sm font-semibold text-gray-900 dark:text-white">
-                  Bonnie Green
+                  Hazel Delda
                 </span>
-                <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
-                  11:46
-                </span>
+                
               </div>
               <p className="text-sm font-normal py-2.5 text-gray-900 dark:text-white text-justify">
                 Looking for any achievements? Here's some of my achievements,
@@ -39,18 +37,16 @@ export const Achievements = () => {
 
           {/* accomplishments */}
 
-          <div className="flex items-start gap-2.5 justify-end">
+          <div className="flex flex-col sm:flex-row items-start gap-2.5 sm:justify-end">
             <div
-              className="flex flex-col w-full max-w-[320px] gap-2.5 border-gray-200 bg-white
-              rounded-s-xl rounded-ee-none rounded-se-none 
-              px-4 py-2 dark:bg-gray-700 items-end"
+              className="flex flex-col w-full max-w-full sm:max-w-[320px] gap-2.5 border-gray-200 bg-white
+    rounded-s-xl rounded-ee-none rounded-se-none 
+    px-4 py-2 dark:bg-gray-700 items-end sm:items-end"
             >
               <div className="flex items-center space-x-2 rtl:space-x-reverse">
-                <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
-                  11:46
-                </span>
+                
                 <span className="text-sm font-semibold text-gray-900 dark:text-white">
-                  Bonnie Green
+                  Hazel Delda
                 </span>
               </div>
 
@@ -67,13 +63,13 @@ export const Achievements = () => {
                     href="https://bipsu.edu.ph/index.php/news-articles/umio-news/bipsu-bscs-studes-win-3rd-place-in-int-l-research-comp?fbclid=IwY2xjawJrXIJleHRuA2FlbQIxMQABHgOebN3Bb75sVlydV-4sKfbA1uOsfsIg0-T0sy7AJfftA3wnZv7-I1ydFosi_aem_4jwIa7fZrwXc4ljRAjxZYQ"
                     className="text-blue-600 underline"
                   >
-                    link here
+                Read more
                   </a>
                   .
                 </p>
                 <div className="group relative mt-2 w-full overflow-x-auto">
                   <div className="flex gap-4">
-                    <div className="relative flex-shrink-0 w-64">
+                    <div className="relative flex-shrink-0 w-48 sm:w-64">
                       <div className="absolute w-full h-full bg-gray-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center"></div>
                       <img
                         src="/images/ISSLET.jpg"
@@ -81,7 +77,7 @@ export const Achievements = () => {
                       />
                     </div>
 
-                    <div className="relative flex-shrink-0 w-64">
+                    <div className="relative flex-shrink-0 w-48 sm:w-64">
                       <div className="absolute w-full h-full bg-gray-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center"></div>
                       <img
                         src="/images/certificate.jpg"
@@ -89,7 +85,7 @@ export const Achievements = () => {
                       />
                     </div>
 
-                    <div className="relative flex-shrink-0 w-64">
+                    <div className="relative flex-shrink-0 w-48 sm:w-64">
                       <div className="absolute w-full h-full bg-gray-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center"></div>
                       <img
                         src="/images/researchers.jpg"
@@ -105,24 +101,22 @@ export const Achievements = () => {
               </span>
             </div>
             <img
-              className="h-8 w-8 rounded-full"
+              className="h-8 w-8 rounded-full self-end sm:self-auto"
               src="/images/profile.png"
               alt="Hazel image"
             />
           </div>
 
-          <div className="flex items-start gap-2.5 justify-end">
+          <div className="flex flex-col sm:flex-row items-start gap-2.5 sm:justify-end">
             <div
-              className="flex flex-col w-full max-w-[320px] gap-2.5 border-gray-200 bg-white 
-              rounded-s-xl rounded-ee-none rounded-se-none 
-              px-4 py-2 dark:bg-gray-700 items-end"
+              className="flex flex-col w-full max-w-full sm:max-w-[320px] gap-2.5 border-gray-200 bg-white
+    rounded-s-xl rounded-ee-none rounded-se-none 
+    px-4 py-2 dark:bg-gray-700 items-end sm:items-end"
             >
               <div className="flex items-center space-x-2 rtl:space-x-reverse">
-                <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
-                  11:46
-                </span>
+                
                 <span className="text-sm font-semibold text-gray-900 dark:text-white">
-                  Bonnie Green
+                  Hazel Delda
                 </span>
               </div>
 
@@ -134,13 +128,13 @@ export const Achievements = () => {
                     href="https://www.facebook.com/share/p/16cgN4sd9L/"
                     className="text-blue-600 underline"
                   >
-                    link here
+                  Read more
                   </a>
                   
                 </p>
                 <div className="group relative mt-2 w-full overflow-x-auto">
                   <div className="flex gap-4">
-                    <div className="relative flex-shrink-0 w-64">
+                    <div className="relative flex-shrink-0 w-48 sm:w-64">
                       <div className="absolute w-full h-full bg-gray-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center"></div>
                       <img
                         src="/images/cvisnetOne.jpg"
@@ -148,7 +142,7 @@ export const Achievements = () => {
                       />
                     </div>
 
-                    <div className="relative flex-shrink-0 w-64">
+                    <div className="relative flex-shrink-0 w-48 sm:w-64">
                       <div className="absolute w-full h-full bg-gray-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center"></div>
                       <img
                         src="/images/cvisnetTwo.jpg"
@@ -164,25 +158,23 @@ export const Achievements = () => {
               </span>
             </div>
             <img
-              className="h-8 w-8 rounded-full"
+              className="h-8 w-8 rounded-full self-end sm:self-auto"
               src="/images/profile.png"
               alt="Hazel image"
             />
           </div>
 
 
-        <div className="flex items-start gap-2.5 justify-end">
+        <div className="flex flex-col sm:flex-row items-start gap-2.5 sm:justify-end">
             <div
-              className="flex flex-col w-full max-w-[320px] gap-2.5 border-gray-200 bg-white 
-              rounded-s-xl rounded-ee-none rounded-se-none 
-              px-4 py-2 dark:bg-gray-700 items-end"
+              className="flex flex-col w-full max-w-full sm:max-w-[320px] gap-2.5 border-gray-200 bg-white
+    rounded-s-xl rounded-ee-none rounded-se-none 
+    px-4 py-2 dark:bg-gray-700 items-end sm:items-end"
             >
               <div className="flex items-center space-x-2 rtl:space-x-reverse">
-                <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
-                  11:46
-                </span>
+                
                 <span className="text-sm font-semibold text-gray-900 dark:text-white">
-                  Bonnie Green
+                  Hazel Delda
                 </span>
               </div>
 
@@ -200,7 +192,7 @@ export const Achievements = () => {
                 </p>
                 <div className="group relative mt-2 w-full overflow-x-auto">
                   <div className="flex gap-4">
-                    <div className="relative flex-shrink-0 w-64">
+                    <div className="relative flex-shrink-0 w-48 sm:w-64">
                       <div className="absolute w-full h-full bg-gray-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center"></div>
                       <img
                         src="/images/honor.jpg"
@@ -208,7 +200,7 @@ export const Achievements = () => {
                       />
                     </div>
 
-                    <div className="relative flex-shrink-0 w-64">
+                    <div className="relative flex-shrink-0 w-48 sm:w-64">
                       <div className="absolute w-full h-full bg-gray-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center"></div>
                       <img
                         src="/images/cert.jpg"
@@ -224,7 +216,7 @@ export const Achievements = () => {
               </span>
             </div>
             <img
-              className="h-8 w-8 rounded-full"
+              className="h-8 w-8 rounded-full self-end sm:self-auto"
               src="/images/profile.png"
               alt="Hazel image"
             />
@@ -233,16 +225,14 @@ export const Achievements = () => {
 
           <div className="flex items-start gap-2.5 justify-end">
             <div
-              className="flex flex-col w-full max-w-[320px] gap-2.5 border-gray-200 bg-white 
+              className="flex flex-col w-full max-w-full sm:max-w-[320px] gap-2.5 border-gray-200 bg-white 
               rounded-s-xl rounded-ee-none rounded-se-none 
               px-4 py-2 dark:bg-gray-700 items-end"
             >
               <div className="flex items-center space-x-2 rtl:space-x-reverse">
-                <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
-                  11:46
-                </span>
+                
                 <span className="text-sm font-semibold text-gray-900 dark:text-white">
-                  Bonnie Green
+                  Hazel Delda
                 </span>
               </div>
 
@@ -254,16 +244,16 @@ export const Achievements = () => {
                     href="https://www.facebook.com/share/1Emfdg7sU9/?mibextid=wwXIfr"
                     className="text-blue-600 underline"
                   >
-                    link here
+                    Read more
                   </a>
                   
                 </p>
                 <div className="group relative mt-2 w-full">
                   <div className="flex gap-4">
-                    <div className="relative flex-shrink-0 w-64">
+                    <div className="relative flex-shrink-0 w-48 sm:w-64">
                       <div className="absolute w-full h-full bg-gray-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center"></div>
                       <img
-                        src="/images/researchlympics.jpg"
+                        src="/images/researchl.jpg"
                         className="rounded-lg w-full"
                       />
                     </div>

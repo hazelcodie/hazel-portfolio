@@ -16,7 +16,7 @@ const AboutMe = () => {
         <div className="flex flex-col md:flex-row gap-12">
           <div className="flex-1">
             <p className="text-sm leading-relaxed text-gray-800 text-justify">
-              Hi! I'm Shella, a Bachelor of Science in Computer Science student.
+              Hi! I'm Hazel Delda, a Bachelor of Science in Computer Science student.
               I'm a goal-driven individual with a passion for creating
               meaningful and functional digital experiences. I specialize in web
               development and UI/UX design, combining creativity and technology
