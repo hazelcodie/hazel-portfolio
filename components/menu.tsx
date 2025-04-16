@@ -1,7 +1,6 @@
 "use client";
 
 import { CalendarIcon, HomeIcon, MailIcon, BookLock } from "lucide-react";
-import { Sun } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 

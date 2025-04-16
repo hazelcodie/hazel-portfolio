@@ -1,6 +1,8 @@
 'use client'
 
 import React, { useEffect, useState, useRef } from "react";
+import Image from "next/image";
+
 import {
   AnimatedSpan,
   Terminal,
@@ -39,7 +41,7 @@ export function TerminalDemo() {
       className="flex flex-col items-center justify-center w-full min-h-screen px-6 py-12"
     >
       <div className="flex justify-center mb-8">
-          <img
+          <Image
             src="/images/skills-logo.png"
             alt="skills"
             className="w-65"

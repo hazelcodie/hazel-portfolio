@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const AboutMe = () => {
   return (
     <section
@@ -6,7 +8,7 @@ const AboutMe = () => {
     >
       <div className="flex flex-col max-w-6xl w-full">
         <div className="flex justify-center mb-8">
-          <img
+          <Image
             src="/images/about-me-logo.png"
             alt="Who am I?"
             className="w-55 h-40"
@@ -38,10 +40,10 @@ const AboutMe = () => {
                 Biliran Province State University
                 <span className="italic"> 2021-2025</span>
               </p>
-              <p className="text-sm text-gray-600 ">
+              <p className="text-sm text-gray-600">
                 Bachelor of Science in Computer Science
               </p>
-              <p className="text-sm text-gray-600 ">
+              <p className="text-sm text-gray-600">
                 <span className="font-bold">GWA:</span> 1.39
               </p>
             </div>

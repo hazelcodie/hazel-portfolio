@@ -1,5 +1,7 @@
 'use client'
 
+import Image from "next/image";
+
 export const Footer = () =>{
 return(
     <footer className="bg-white rounded-lg shadow-sm dark:bg-gray-900 m-4">
@@ -9,7 +11,7 @@ return(
         href="#"
         className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
       >
-        <img
+        <Image
           src="/images/created-to-create-logo.png"
           className="h-8"
           alt="Created to Create by Hazel Logo"

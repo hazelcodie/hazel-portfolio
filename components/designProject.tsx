@@ -3,6 +3,7 @@ import { PiScanSmileyThin } from "react-icons/pi";
 import { BsCartDash } from "react-icons/bs";
 import { BsChatSquareText } from "react-icons/bs";
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
+import Image from "next/image";
 
 const features = [
   {
@@ -30,8 +31,9 @@ const features = [
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
     background: (
-      <img  
+      <Image  
       src="/images/skinsense.png"
+      alt="skinsensephoto"
       className="absolute inset-0 w-full h-full object-cover"
       />
     ),
@@ -44,8 +46,9 @@ const features = [
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
     background: (
-      <img
+      <Image
         src="/images/event.png"
+        alt="eventms"
         className="absolute inset-0 w-full h-full object-cover"
       />
     ),
@@ -73,7 +76,7 @@ export const DesignProject = () => {
   return (
     <section id="design-project" className="py-12 px-18 bg-[#faf4f4]">
       <div className="flex justify-center mb-8">
-          <img
+          <Image
             src="/images/designproject-logo.png"
             alt="designProjects"
             className="w-65"

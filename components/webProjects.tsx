@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import Image from "next/image";
 
 interface Project {
   title: string;
@@ -65,7 +66,7 @@ const Projects = () => {
   return (
     <div id="web-projects" className="flex flex-col items-center justify-center min-h-screen px-4 md:px-18">
       <div className="flex justify-center mb-8 mt-7">
-        <img
+        <Image
           src="/images/webprojects-logo.png"
           alt="skills"
           className="w-50"

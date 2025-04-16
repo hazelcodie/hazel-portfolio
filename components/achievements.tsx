@@ -1,9 +1,11 @@
+import Image from "next/image";
+
 export const Achievements = () => {
   return (
     <section className="flex justify-center px-4 pb-10">
       <div className="w-full max-w-2xl text-center">
         <div className="flex justify-center mb-8 mt-10">
-          <img
+          <Image
             src="/images/achievements-logo.png"
             alt="skills"
             className="w-40 sm:w-48 md:w-65"
@@ -13,7 +15,7 @@ export const Achievements = () => {
         <div className="flex flex-col gap-5">
           {/* Left side message */}
           <div className="flex items-start gap-2.5">
-            <img
+            <Image
               className="w-8 h-8 rounded-full"
               src="/images/profile.png"
               alt="Hazel image"
@@ -71,24 +73,27 @@ export const Achievements = () => {
                   <div className="flex gap-4">
                     <div className="relative flex-shrink-0 w-48 sm:w-64">
                       <div className="absolute w-full h-full bg-gray-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center"></div>
-                      <img
+                      <Image
                         src="/images/ISSLET.jpg"
+                        alt="isslet"
                         className="rounded-lg w-full"
                       />
                     </div>
 
                     <div className="relative flex-shrink-0 w-48 sm:w-64">
                       <div className="absolute w-full h-full bg-gray-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center"></div>
-                      <img
+                      <Image
                         src="/images/certificate.jpg"
+                        alt="certificate"
                         className="rounded-lg w-full"
                       />
                     </div>
 
                     <div className="relative flex-shrink-0 w-48 sm:w-64">
                       <div className="absolute w-full h-full bg-gray-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center"></div>
-                      <img
+                      <Image
                         src="/images/researchers.jpg"
+                        alt="researchers"
                         className="rounded-lg w-full"
                       />
                     </div>
@@ -100,7 +105,7 @@ export const Achievements = () => {
                 Delivered
               </span>
             </div>
-            <img
+            <Image
               className="h-8 w-8 rounded-full self-end sm:self-auto"
               src="/images/profile.png"
               alt="Hazel image"
@@ -136,8 +141,9 @@ export const Achievements = () => {
                   <div className="flex gap-4">
                     <div className="relative flex-shrink-0 w-48 sm:w-64">
                       <div className="absolute w-full h-full bg-gray-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center"></div>
-                      <img
+                      <Image
                         src="/images/cvisnetOne.jpg"
+                        alt="cvisnet"
                         className="rounded-lg w-full"
                       />
                     </div>
@@ -146,6 +152,7 @@ export const Achievements = () => {
                       <div className="absolute w-full h-full bg-gray-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center"></div>
                       <img
                         src="/images/cvisnetTwo.jpg"
+                        alt="cvisnetpics"
                         className="rounded-lg w-full"
                       />
                     </div>
@@ -157,7 +164,7 @@ export const Achievements = () => {
                 Delivered
               </span>
             </div>
-            <img
+            <Image
               className="h-8 w-8 rounded-full self-end sm:self-auto"
               src="/images/profile.png"
               alt="Hazel image"
@@ -194,16 +201,18 @@ export const Achievements = () => {
                   <div className="flex gap-4">
                     <div className="relative flex-shrink-0 w-48 sm:w-64">
                       <div className="absolute w-full h-full bg-gray-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center"></div>
-                      <img
+                      <Image
                         src="/images/honor.jpg"
+                        alt="honorstudent"
                         className="rounded-lg w-full"
                       />
                     </div>
 
                     <div className="relative flex-shrink-0 w-48 sm:w-64">
                       <div className="absolute w-full h-full bg-gray-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center"></div>
-                      <img
+                      <Image
                         src="/images/cert.jpg"
+                        alt="certificate"
                         className="rounded-lg w-full"
                       />
                     </div>
@@ -215,7 +224,7 @@ export const Achievements = () => {
                 Delivered
               </span>
             </div>
-            <img
+            <Image
               className="h-8 w-8 rounded-full self-end sm:self-auto"
               src="/images/profile.png"
               alt="Hazel image"
@@ -252,8 +261,9 @@ export const Achievements = () => {
                   <div className="flex gap-4">
                     <div className="relative flex-shrink-0 w-48 sm:w-64">
                       <div className="absolute w-full h-full bg-gray-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center"></div>
-                      <img
+                      <Image
                         src="/images/researchl.jpg"
+                        alt="researchlympics"
                         className="rounded-lg w-full"
                       />
                     </div>
@@ -265,7 +275,7 @@ export const Achievements = () => {
                 Delivered
               </span>
             </div>
-            <img
+            <Image
               className="h-8 w-8 rounded-full"
               src="/images/profile.png"
               alt="Hazel image"
