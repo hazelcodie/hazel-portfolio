@@ -5,7 +5,7 @@ import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 const features = [
   {
     Icon: FileTextIcon,
-    name: "Save your files",
+    name: "BuyCycle Mobile App",
     description: "We automatically save your files as you type.",
     href: "https://www.figma.com/design/xJm9qS87AVyj8c3sRQRfFM/BuyCycle?node-id=266-401&t=p0ny5g8AVMmUAE9F-1",
     cta: "Learn more",
@@ -22,7 +22,7 @@ const features = [
   },
   {
     Icon: BellIcon,
-    name: "Notifications",
+    name: "Skin Sense",
     description: "Get notified when something happens.",
     href: "https://www.figma.com/design/uxLf61q0h8UJmSpyT9P8At/SkinSense--Thesis-UI-DESIGN?node-id=250-453&t=DSnIGbGyejuF8I6Q-1",
     cta: "Learn more",
@@ -36,7 +36,7 @@ const features = [
   },
   {
     Icon: Share2Icon,
-    name: "Integrations",
+    name: "Event Management System",
     description: "Supports 100+ integrations and counting.",
     href: "https://www.figma.com/design/CamCwrRT8jxqFlMv4SrVsD/event-wireframe?node-id=398-2&t=jE06eqhmE45lb9il-1",
     cta: "Learn more",
@@ -50,7 +50,7 @@ const features = [
   },
   {
     Icon: CalendarIcon,
-    name: "Calendar",
+    name: "HAZE AI Assistant",
     description: "Use the calendar to filter your files by date.",
     href: "https://www.figma.com/design/9xvlcX25pyMmtDAwQMYi5V/HAZE-AI-assistant?node-id=44-305&t=hmNlD7HZhVVFE53F-1",
     cta: "Learn more",

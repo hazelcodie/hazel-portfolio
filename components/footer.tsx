@@ -18,18 +18,18 @@ return(
       </a>
       <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
         <li>
-          <a href="#" className="hover:underline me-4 md:me-6">
+          <a href="#about-me" className="hover:underline me-4 md:me-6">
             About
           </a>
         </li>
         <li>
-          <a href="#" className="hover:underline me-4 md:me-6">
-            Privacy Policy
+          <a href="design-project" className="hover:underline me-4 md:me-6">
+            Designs
           </a>
         </li>
         <li>
-          <a href="#" className="hover:underline me-4 md:me-6">
-            Licensing
+          <a href="#web-projects" className="hover:underline me-4 md:me-6">
+            Web Projects
           </a>
         </li>
         <li>

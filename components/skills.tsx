@@ -119,7 +119,7 @@ export function TerminalDemo() {
                 bugs since forever 🐞)
               </span>
             </AnimatedSpan>
-            <AnimatedSpan delay={6000} className="text-green-500 text-sm">
+            <AnimatedSpan delay={6000} className="text-green-500 text-xs">
               <span>
                 ✔ CMS installed:{" "}
                 <span className="font-bold text-black">WordPress</span> (because

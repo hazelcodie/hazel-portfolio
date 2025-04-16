@@ -46,7 +46,7 @@ const projectsData: Project[] = [
 ];
 const Projects = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4 md:px-18">
+    <div id="web-projects" className="flex flex-col items-center justify-center min-h-screen px-4 md:px-18">
       <div className="flex justify-center mb-8 mt-7">
           <img
             src="/images/webprojects-logo.png"
