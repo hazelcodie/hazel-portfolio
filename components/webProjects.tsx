@@ -69,7 +69,8 @@ const Projects = () => {
         <Image
           src="/images/webprojects-logo.png"
           alt="skills"
-          className="w-50"
+          width={230}
+          height={180}
         />
       </div>
 

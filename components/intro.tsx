@@ -14,7 +14,7 @@ const Intro = () => {
           {/* Text Section */}
           <div className="flex flex-col justify-center gap-4 ">
             <h1 className="text-2xl md:text-3xl lg:text-4xl text-black font-bold">
-              I'm Hazel and I specialized in
+              I&apos;m Hazel and I specialized in
             </h1>
 
             <div className="flex flex-col items-start gap-3">

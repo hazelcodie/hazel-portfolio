@@ -11,6 +11,8 @@ const AboutMe = () => {
           <Image
             src="/images/about-me-logo.png"
             alt="Who am I?"
+            width={307}
+            height={217}
             className="w-55 h-40"
           />
         </div>
@@ -18,14 +20,14 @@ const AboutMe = () => {
         <div className="flex flex-col md:flex-row gap-12">
           <div className="flex-1">
             <p className="text-sm leading-relaxed text-gray-800 text-justify">
-              Hi! I'm Hazel Delda, a Bachelor of Science in Computer Science student.
-              I'm a goal-driven individual with a passion for creating
+              Hi! I&apos;m Hazel Delda, a Bachelor of Science in Computer Science student.
+              I&apos;m a goal-driven individual with a passion for creating
               meaningful and functional digital experiences. I specialize in web
               development and UI/UX design, combining creativity and technology
               to bring ideas to life.
               <br />
               <br />
-              While my main focus is on frontend and user-centered design, I'm
+              While my main focus is on frontend and user-centered design, I&apos;m
               also exploring other areas in tech — continuously learning and
               growing beyond my core expertise.
             </p>

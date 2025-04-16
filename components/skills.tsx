@@ -28,8 +28,9 @@ export function TerminalDemo() {
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      const currentRef = sectionRef.current; // Assign sectionRef.current to a variable
+      if (currentRef) {
+        observer.unobserve(currentRef); // Use the variable instead of accessing sectionRef.current directly
       }
     };
   }, []);
@@ -40,11 +41,12 @@ export function TerminalDemo() {
       ref={sectionRef} // Attach the ref to the section
       className="flex flex-col items-center justify-center w-full min-h-screen px-6 py-12"
     >
-      <div className="flex justify-center mb-8">
+      <div className="flex justify-center mb-6">
           <Image
             src="/images/skills-logo.png"
             alt="skills"
-            className="w-65"
+            width={300}
+            height={108}
           />
         </div>
       <Terminal>
@@ -82,8 +84,8 @@ export function TerminalDemo() {
             <AnimatedSpan delay={3000} className="text-green-500 text-xs">
               <span>
                 ✔ Database summoned:{" "}
-                <span className="font-bold text-black">MySQL</span> (aka "WHERE
-                the data lives 🗃️")
+                <span className="font-bold text-black">MySQL</span> (aka &quot;WHERE
+                the data lives 🗃️&quot;)
               </span>
             </AnimatedSpan>
             <AnimatedSpan delay={3500} className="text-green-500 text-xs">

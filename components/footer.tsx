@@ -13,6 +13,8 @@ return(
       >
         <Image
           src="/images/created-to-create-logo.png"
+          width={150}
+          height={67}
           className="h-8"
           alt="Created to Create by Hazel Logo"
         />

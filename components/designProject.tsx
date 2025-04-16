@@ -34,6 +34,8 @@ const features = [
       <Image  
       src="/images/skinsense.png"
       alt="skinsensephoto"
+      width={1600}
+      height={1200}
       className="absolute inset-0 w-full h-full object-cover"
       />
     ),
@@ -49,6 +51,8 @@ const features = [
       <Image
         src="/images/event.png"
         alt="eventms"
+        width={1440}
+        height={1024}
         className="absolute inset-0 w-full h-full object-cover"
       />
     ),
@@ -79,7 +83,8 @@ export const DesignProject = () => {
           <Image
             src="/images/designproject-logo.png"
             alt="designProjects"
-            className="w-65"
+            width={300}
+            height={61}
           />
         </div>
       <BentoGrid>

@@ -8,6 +8,8 @@ export const Achievements = () => {
           <Image
             src="/images/achievements-logo.png"
             alt="skills"
+            width={350}
+            height={119}
             className="w-40 sm:w-48 md:w-65"
           />
         </div>
@@ -18,6 +20,8 @@ export const Achievements = () => {
             <Image
               className="w-8 h-8 rounded-full"
               src="/images/profile.png"
+              width={60}
+              height={60}
               alt="Hazel image"
             />
             <div className="flex flex-col w-full max-w-full sm:max-w-[320px] leading-1.5 p-4 border-gray-200 bg-white rounded-e-xl rounded-es-xl dark:bg-gray-700 items-start">
@@ -28,7 +32,7 @@ export const Achievements = () => {
                 
               </div>
               <p className="text-sm font-normal py-2.5 text-gray-900 dark:text-white text-justify">
-                Looking for any achievements? Here's some of my achievements,
+                Looking for any achievements? Here&apos;s some of my achievements,
                 yet.
               </p>
               <span className="text-sm font-normal text-gray-500 dark:text-gray-400 self-end">
@@ -76,6 +80,8 @@ export const Achievements = () => {
                       <Image
                         src="/images/ISSLET.jpg"
                         alt="isslet"
+                        width={2048}
+                        height={1536}
                         className="rounded-lg w-full"
                       />
                     </div>
@@ -85,6 +91,8 @@ export const Achievements = () => {
                       <Image
                         src="/images/certificate.jpg"
                         alt="certificate"
+                        width={1536}
+                        height={1200}
                         className="rounded-lg w-full"
                       />
                     </div>
@@ -94,6 +102,8 @@ export const Achievements = () => {
                       <Image
                         src="/images/researchers.jpg"
                         alt="researchers"
+                        width={828}
+                        height={780}
                         className="rounded-lg w-full"
                       />
                     </div>
@@ -108,6 +118,8 @@ export const Achievements = () => {
             <Image
               className="h-8 w-8 rounded-full self-end sm:self-auto"
               src="/images/profile.png"
+              width={60}
+              height={60}
               alt="Hazel image"
             />
           </div>
@@ -144,15 +156,19 @@ export const Achievements = () => {
                       <Image
                         src="/images/cvisnetOne.jpg"
                         alt="cvisnet"
+                        width={1080}
+                        height={810}
                         className="rounded-lg w-full"
                       />
                     </div>
 
                     <div className="relative flex-shrink-0 w-48 sm:w-64">
                       <div className="absolute w-full h-full bg-gray-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center"></div>
-                      <img
+                      <Image
                         src="/images/cvisnetTwo.jpg"
                         alt="cvisnetpics"
+                        width={1000}
+                        height={750}
                         className="rounded-lg w-full"
                       />
                     </div>
@@ -167,6 +183,8 @@ export const Achievements = () => {
             <Image
               className="h-8 w-8 rounded-full self-end sm:self-auto"
               src="/images/profile.png"
+              width={60}
+              height={60}
               alt="Hazel image"
             />
           </div>
@@ -204,6 +222,8 @@ export const Achievements = () => {
                       <Image
                         src="/images/honor.jpg"
                         alt="honorstudent"
+                        width={1080}
+                        height={1080}
                         className="rounded-lg w-full"
                       />
                     </div>
@@ -213,6 +233,8 @@ export const Achievements = () => {
                       <Image
                         src="/images/cert.jpg"
                         alt="certificate"
+                        width={2048}
+                        height={1536}
                         className="rounded-lg w-full"
                       />
                     </div>
@@ -228,6 +250,8 @@ export const Achievements = () => {
               className="h-8 w-8 rounded-full self-end sm:self-auto"
               src="/images/profile.png"
               alt="Hazel image"
+              width={60}
+              height={60}
             />
           </div>
 
@@ -264,6 +288,8 @@ export const Achievements = () => {
                       <Image
                         src="/images/researchl.jpg"
                         alt="researchlympics"
+                        width={1140}
+                        height={858}
                         className="rounded-lg w-full"
                       />
                     </div>
@@ -278,6 +304,8 @@ export const Achievements = () => {
             <Image
               className="h-8 w-8 rounded-full"
               src="/images/profile.png"
+              width={60}
+              height={60}
               alt="Hazel image"
             />
           </div>
