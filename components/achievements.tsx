@@ -61,8 +61,8 @@ export const Achievements = () => {
                   We proudly won{" "}
                   <span className="font-semibold">3rd Place</span> in the{" "}
                   <span className="font-semibold">
-                    International Student Scientific Information Technology
-                    Applications (ISSITA) 2025
+                    International Symposium on Innovation in Information Technology and
+                    Application (ISIITA) 2025
                   </span>{" "}
                   competition! <br />
                   <a
